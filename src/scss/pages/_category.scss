@@ -1,0 +1,81 @@
+.category {
+    padding: 100px 0;
+
+    .text-center {
+        margin-bottom: 30px;
+        text-align: center;
+
+        h2 {
+            font-weight: 600;
+            font-size: 34px;
+            line-height: 140%;
+            color: #383838;
+
+            span {
+                color: #1c4980;
+            }
+        }
+    }
+
+    .searches {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        gap: 16px;
+        grid-gap: 16px;
+
+
+        .jobs {
+            &:hover {
+                a {
+                    box-shadow: 0 0 0 1px #383838;
+                    border-color: #383838;
+                }
+
+            }
+
+            a {
+                padding-left: 16px;
+                padding-right: 20px;
+                height: 72px;
+                border-radius: 130px;
+                border: 1px solid #DADCE0;
+                background: #FFF;
+                transition: .3s;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+
+                .bgImage {
+                    background-image: url('https://d8it4huxumps7.cloudfront.net/assets/images/jobs_page_icons.png?d=720x120');
+                    width: 40px;
+                    height: 40px;
+                    background-size: cover;
+
+                }
+
+                p {
+                    color: #383838;
+                    font-size: 16px;
+                    margin-bottom: 0;
+                    padding-left: 10px;
+                }
+            }
+
+            .explore {
+                p {
+                    color: #0073e6;
+                }
+
+                padding-left: 30px;
+                padding-right: 30px;
+
+                i {
+                    font-size: 18px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
