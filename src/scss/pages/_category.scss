@@ -22,58 +22,100 @@
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
-        gap: 16px;
-        grid-gap: 16px;
-
-
         .jobs {
+            width: 33.3333%;
+            padding: 5px;
+            @media (min-width:1200px) {
+                width: 25%;
+            }
             &:hover {
                 a {
-                    box-shadow: 0 0 0 1px #383838;
-                    border-color: #383838;
+                    box-shadow: none;
+                    border-color: none;
+
+                    @media (min-width:768px) {
+                        box-shadow: 0 0 0 1px #383838;
+                        border-color: #383838;
+                    }
                 }
 
             }
 
             a {
-                padding-left: 16px;
-                padding-right: 20px;
-                height: 72px;
-                border-radius: 130px;
-                border: 1px solid #DADCE0;
-                background: #FFF;
-                transition: .3s;
+                border: none;
+                color: inherit;
                 display: inline-flex;
-                justify-content: center;
                 align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                @media (min-width:768px) {
+                    padding: 16px;
+                    height: 72px;
+                    border-radius: 100px;
+                    border: 1px solid #DADCE0;
+                    background: #FFF;
+                    transition: .3s;
+                    display: inline-flex;
+                    color: inherit;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: row;
+                }
 
                 .bgImage {
-                    background-image: url('https://d8it4huxumps7.cloudfront.net/assets/images/jobs_page_icons.png?d=720x120');
                     width: 40px;
                     height: 40px;
-                    background-size: cover;
+                    background-color: #ebe8fd;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
 
                 }
 
                 p {
                     color: #383838;
-                    font-size: 16px;
+                    font-size: 12px;
                     margin-bottom: 0;
                     padding-left: 10px;
+                    font-weight: 400;
+                    margin-top: 4px;
+                    @media (min-width:768px) {
+                        font-size: 16px;
+                    margin-bottom: 0;
+                    margin-top: 0;
+                    padding-left: 10px;
+                    font-weight: 500;
+                    }
                 }
             }
 
             .explore {
+                .bgImage{
+                    display: flex;
+                    @media (min-width:768px) {
+                        display: none;
+                    }
+                }
                 p {
-                    color: #0073e6;
+                    @media (min-width:768px) {
+                        color: #0073e6;
+                        
+                    }
                 }
 
                 padding-left: 30px;
                 padding-right: 30px;
 
-                i {
-                    font-size: 18px;
-                    margin-left: 10px;
+                .arrow  {
+                    display: none;
+                    margin-left: 0;
+                    @media (min-width:768px) {
+                        display: block;
+                        font-size: 18px;
+                        margin-left: 10px;
+                        
+                    }
                 }
             }
         }
