@@ -478,4 +478,165 @@ ul {
     font-size: 18px;
     margin-left: 10px;
   }
+}
+
+.jobs {
+  background: #f6f8fa;
+  padding-top: 30px;
+}
+.jobs .container {
+  max-width: 1180px;
+}
+.jobs .container .borderr {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+}
+.jobs .container .job_name {
+  display: flex;
+  align-items: center;
+}
+.jobs .container .job_name .image {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #dde5ea;
+}
+@media (min-width: 992px) {
+  .jobs .container .job_name .image {
+    width: 124px;
+    height: 124px;
+  }
+}
+.jobs .container .job_name .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.jobs .container .job_name .text {
+  padding-left: 20px;
+}
+.jobs .container .job_name .text .title h1 {
+  font-weight: 600;
+  color: #383838;
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 19px;
+}
+@media (min-width: 992px) {
+  .jobs .container .job_name .text .title h1 {
+    font-size: 24px;
+    line-height: 27px;
+  }
+}
+.jobs .container .job_name .text .building {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+@media (min-width: 992px) {
+  .jobs .container .job_name .text .building {
+    font-size: 24px;
+    line-height: 22px;
+  }
+}
+.jobs .container .job_name .text .building span {
+  margin-right: 10px;
+}
+.jobs .container .job_name .text .building a {
+  color: #383838;
+  transition: 0.3s;
+}
+.jobs .container .job_name .text .building a:hover {
+  color: #0073e6;
+}
+.jobs .container .job_name .text .place {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #383838;
+  font-weight: 500;
+}
+@media (min-width: 992px) {
+  .jobs .container .job_name .text .place {
+    font-size: 16px;
+  }
+}
+.jobs .container .job_name .text .place span {
+  margin-left: 10px;
+}
+.jobs .container .info .text h2 {
+  color: #383838;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 30px;
+  border-left: 4px solid #0073e6;
+  padding-left: 15px;
+  position: relative;
+  font-weight: 600;
+  margin-left: -15px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .jobs .container .info .text h2 {
+    margin: 0 0 30px;
+    font-size: 18px;
+  }
+}
+.jobs .container .deadlines {
+  margin-top: 10px;
+}
+.jobs .container .deadlines .deadline {
+  display: flex;
+}
+.jobs .container .deadlines .deadline .icon {
+  background: rgba(0, 115, 230, 0.1);
+  border-radius: 8px;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jobs .container .deadlines .deadline .icon i {
+  color: #0073e6;
+}
+.jobs .container .deadlines .deadline span {
+  padding-left: 15px;
+  line-height: 18px;
+  display: block;
+  color: #383838;
+  font-weight: 500;
+  font-size: 13px;
+}
+.jobs .container .information {
+  margin-top: 10px;
+}
+.jobs .container .information .cart {
+  margin: 10px;
+  background: #ffffff;
+  padding: 20px 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0.93px 10px rgba(30, 41, 52, 0.0784313725);
+  border-radius: 12px;
+}
+.jobs .container .information .cart .cart_text h3 {
+  font-size: 17px;
+  line-height: 21px;
+  margin-bottom: 12px;
+  color: #383838;
+  font-weight: 500;
+}
+.jobs .container .information .cart .cart_text p {
+  color: #727272;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

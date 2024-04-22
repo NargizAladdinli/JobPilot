@@ -1,0 +1,184 @@
+.jobs {
+    background: #f6f8fa;
+    padding-top: 30px;
+
+    .container {
+        max-width: 1180px;
+
+        .borderr {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .job_name {
+            display: flex;
+            align-items: center;
+
+            .image {
+                width: 90px;
+                height: 90px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #ffffff;
+                border-radius: 8px;
+                border: 1px solid #dde5ea;
+
+                @media (min-width:992px) {
+                    width: 124px;
+                    height: 124px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .text {
+                padding-left: 20px;
+
+                .title {
+                    h1 {
+                        font-weight: 600;
+                        color: #383838;
+                        font-size: 14px;
+                        margin-bottom: 0;
+                        line-height: 19px;
+
+                        @media (min-width:992px) {
+                            font-size: 24px;
+                            line-height: 27px;
+                        }
+                    }
+                }
+
+                .building {
+                    margin-top: 8px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+
+                    @media (min-width:992px) {
+                        font-size: 24px;
+                        line-height: 22px;
+                    }
+
+                    span {
+                        margin-right: 10px;
+                    }
+
+                    a {
+                        color: #383838;
+                        transition: .3s;
+
+                        &:hover {
+                            color: #0073e6;
+                        }
+                    }
+                }
+
+                .place {
+                    margin-top: 8px;
+                    font-size: 12px;
+                    color: #383838;
+                    font-weight: 500;
+
+                    @media (min-width:992px) {
+                        font-size: 16px;
+                    }
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .info {
+            .text {
+                h2 {
+                    color: #383838;
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin: 0 0 30px;
+                    border-left: 4px solid #0073e6;
+                    padding-left: 15px;
+                    position: relative;
+                    font-weight: 600;
+                    margin-left: -15px;
+                    margin-bottom: 20px;
+
+                    @media (min-width:992px) {
+                        margin: 0 0 30px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .deadlines {
+            margin-top: 10px;
+
+            .deadline {
+                display: flex;
+
+                .icon {
+                    background: rgba(0, 115, 230, .1);
+                    border-radius: 8px;
+                    height: 32px;
+                    width: 32px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        color: #0073e6;
+                    }
+                }
+
+                span {
+                    padding-left: 15px;
+                    line-height: 18px;
+                    display: block;
+                    color: #383838;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .information {
+            margin-top: 10px;
+
+            .cart {
+                margin: 10px;
+                background: #ffffff;
+                padding: 20px 20px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                box-shadow: 0 .93px 10px #1e293414;
+                border-radius: 12px;
+
+                .cart_text {
+                    h3 {
+                        font-size: 17px;
+                        line-height: 21px;
+                        margin-bottom: 12px;
+                        color: #383838;
+                        font-weight: 500;
+                    }
+                    p{
+                        color: #727272;
+                        font-size: 14px;
+                        line-height: 19px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
