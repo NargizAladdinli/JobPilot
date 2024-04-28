@@ -62,7 +62,7 @@
                     line-height: 16px;
 
                     @media (min-width:992px) {
-                        font-size: 24px;
+                        font-size: 16px;
                         line-height: 22px;
                     }
 
@@ -152,7 +152,7 @@
         }
 
         .details {
-            .dash {
+            .dashb {
                 position: relative;
 
 
@@ -163,7 +163,6 @@
                     left: -15px;
                     bottom: 0px;
                     border-left: 4px dashed #0073e6;
-                    border-color: inherit;
                     opacity: .35;
 
                     @media (min-width:992px) {
@@ -197,12 +196,12 @@
                     }
 
                     #texteditor {
-                        border-left: 1px dashed #d8d8d8;
+                        border-left: 1px dashed rgba(39, 73, 125, .2);
                         margin: 0 0 25px 15px;
                         padding: 0 0 0 20px;
 
                         @media (min-width:992px) {
-                            border-left: 2px dashed #d8d8d8;
+                            border-left: 2px dashed rgba(39, 73, 125, .2);
                         }
 
                         li {
@@ -218,7 +217,7 @@
                                 position: absolute;
                                 height: 15px;
                                 width: 15px;
-                                border: 1px solid #c6c5c5;
+                                border: 1px solid rgba(39, 73, 125, .24);
                                 background: #fff;
                                 left: -28px;
                                 top: 0;
@@ -228,7 +227,7 @@
                                 @media (min-width:992px) {
                                     height: 20px;
                                     width: 20px;
-                                    border: 2px solid #bccbe7;
+                                    border: 2px solid rgba(39, 73, 125, .24);
                                     left: -31px;
                                 }
                             }
@@ -240,7 +239,7 @@
                                 margin: auto;
                                 height: 5px;
                                 width: 5px;
-                                background: #c6c5c5;
+                                background: rgba(39, 73, 125, .5);
                                 left: -23px;
                                 top: 0;
                                 bottom: 0;
@@ -333,6 +332,7 @@
                             position: relative;
                             white-space: nowrap;
                             width: 100%;
+                            z-index: 2;
 
                             &::after {
                                 content: "";
@@ -344,6 +344,7 @@
                                 top: 0;
                                 left: 0;
                                 background: rgba(0, 0, 0, .2);
+                                border-radius: 8px;
                             }
 
                             &:hover {
@@ -409,6 +410,8 @@
                                 top: 0;
                                 left: 0;
                                 background: rgba(0, 0, 0, .2);
+                                border-radius: 8px;
+
                             }
 
                             &:hover {
@@ -441,10 +444,14 @@
                         display: flex;
                         align-items: center;
                         margin-bottom: 0px;
-                        padding-right: 60px;
-                        padding-left: 60px;
+                        padding-right: 120px;
+                        padding-left: 20px;
                         border-right: 1px solid #dde5ea;
 
+                        @media (min-width:768px) {
+                            padding-right: 200px;
+                            padding-left: 20px;
+                        }
                         @media (min-width:992px) {
                             margin-bottom: 24px;
                             padding-right: 0;
@@ -489,7 +496,7 @@
                                 color: #727272;
                                 margin: 0;
 
-                                @media (min-width:992px) {
+                                @media (min-width:576px) {
                                     font-size: 14px;
                                 }
                             }

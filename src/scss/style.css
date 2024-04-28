@@ -542,7 +542,7 @@ ul {
 }
 @media (min-width: 992px) {
   .jobs .container .job_name .text .building {
-    font-size: 24px;
+    font-size: 16px;
     line-height: 22px;
   }
 }
@@ -615,67 +615,66 @@ ul {
   font-weight: 500;
   font-size: 13px;
 }
-.jobs .container .details .dash {
+.jobs .container .details .dashb {
   position: relative;
 }
-.jobs .container .details .dash::after {
+.jobs .container .details .dashb::after {
   content: "";
   position: absolute;
   top: 0;
   left: -15px;
   bottom: 0px;
   border-left: 4px dashed #0073e6;
-  border-color: inherit;
   opacity: 0.35;
 }
 @media (min-width: 992px) {
-  .jobs .container .details .dash::after {
+  .jobs .container .details .dashb::after {
     left: 0;
   }
 }
-.jobs .container .details .dash .textOne {
+.jobs .container .details .dashb .textOne {
   padding-left: 20px;
   margin-top: -20px;
   padding-top: 25px;
   color: #383838;
 }
-.jobs .container .details .dash .textOne p {
+.jobs .container .details .dashb .textOne p {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
 }
 @media (min-width: 992px) {
-  .jobs .container .details .dash .textOne p {
+  .jobs .container .details .dashb .textOne p {
     font-size: 15px;
     line-height: 28px;
     margin-bottom: 25px;
   }
 }
-.jobs .container .details .dash .textOne #texteditor {
-  border-left: 1px dashed #d8d8d8;
+.jobs .container .details .dashb .textOne #texteditor {
+  border-left: 1px dashed rgba(39, 73, 125, 0.2);
   margin: 0 0 25px 15px;
   padding: 0 0 0 20px;
 }
 @media (min-width: 992px) {
-  .jobs .container .details .dash .textOne #texteditor {
-    border-left: 2px dashed #d8d8d8;
+  .jobs .container .details .dashb .textOne #texteditor {
+    border-left: 2px dashed rgba(39, 73, 125, 0.2);
   }
 }
-.jobs .container .details .dash .textOne #texteditor li {
+.jobs .container .details .dashb .textOne #texteditor li {
   margin-bottom: 7px;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   position: relative;
 }
-.jobs .container .details .dash .textOne #texteditor li::before {
+.jobs .container .details .dashb .textOne #texteditor li::before {
   content: "";
   border-radius: 50%;
   position: absolute;
   height: 15px;
   width: 15px;
-  border: 1px solid #c6c5c5;
+  border: 1px solid rgba(39, 73, 125, 0.24);
   background: #fff;
   left: -28px;
   top: 0;
@@ -683,27 +682,27 @@ ul {
   margin: auto;
 }
 @media (min-width: 992px) {
-  .jobs .container .details .dash .textOne #texteditor li::before {
+  .jobs .container .details .dashb .textOne #texteditor li::before {
     height: 20px;
     width: 20px;
-    border: 2px solid #bccbe7;
+    border: 2px solid rgba(39, 73, 125, 0.24);
     left: -31px;
   }
 }
-.jobs .container .details .dash .textOne #texteditor li::after {
+.jobs .container .details .dashb .textOne #texteditor li::after {
   content: "";
   border-radius: 50%;
   position: absolute;
   margin: auto;
   height: 5px;
   width: 5px;
-  background: #c6c5c5;
+  background: rgba(39, 73, 125, 0.5);
   left: -23px;
   top: 0;
   bottom: 0;
 }
 @media (min-width: 992px) {
-  .jobs .container .details .dash .textOne #texteditor li::after {
+  .jobs .container .details .dashb .textOne #texteditor li::after {
     height: 8px;
     width: 8px;
     left: -25px;
@@ -782,6 +781,7 @@ ul {
   position: relative;
   white-space: nowrap;
   width: 100%;
+  z-index: 2;
 }
 .jobs .container .box .apply_card .apply_item .apply a::after {
   content: "";
@@ -793,6 +793,7 @@ ul {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 .jobs .container .box .apply_card .apply_item .apply a:hover {
   color: white;
@@ -852,6 +853,7 @@ ul {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 .jobs .container .box .apply_card_mobile .apply_item .apply a:hover {
   color: white;
@@ -875,9 +877,15 @@ ul {
   display: flex;
   align-items: center;
   margin-bottom: 0px;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 120px;
+  padding-left: 20px;
   border-right: 1px solid #dde5ea;
+}
+@media (min-width: 768px) {
+  .jobs .container .box .box_sticky .boxing .info_box {
+    padding-right: 200px;
+    padding-left: 20px;
+  }
 }
 @media (min-width: 992px) {
   .jobs .container .box .box_sticky .boxing .info_box {
@@ -921,7 +929,7 @@ ul {
   color: #727272;
   margin: 0;
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .jobs .container .box .box_sticky .boxing .info_box .text p {
     font-size: 14px;
   }
