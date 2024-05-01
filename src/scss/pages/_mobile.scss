@@ -1,0 +1,32 @@
+.mobile_category {
+    .menu-main {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 0;
+        background: #fff;
+        z-index: 8;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 10px 20px;
+        border-top: 1px solid #bbb;
+        transition: .3s linear;
+        li{
+            a{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                font-size: 12px;
+                color: #000;
+                transition: .3s linear;
+                i{
+                    font-size: 18px;
+                }
+                &:hover{
+                    color: #0c4dde;
+                }
+            }
+        }
+    }
+}
